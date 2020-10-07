@@ -1,38 +1,84 @@
-.App {
-  text-align: center;
+body {
+  margin: 0 30%;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.deleteButton {
+  border-radius: 70%;
+  margin-right: 10px;
+  border: none;
+  background: transparent;
+  color: red;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.todoInputBody {
+  /* margin-top: 5px; */
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid #ececec;
+  padding-bottom: 2px;
+  padding-top: 2px;
   align-items: center;
+  font-size: 30px;
+  background-color: white;
+  /* text-decoration: line-through; */
+}
+
+.wholeBody {
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  /* font-weight: 300; */
+  color: #e9dbda;
+  background-color: #f4f4f4;
+}
+.inputArea {
+  width: 98.5%;
+  height: 50px;
+  font-size: 35px;
+  border: 1px solid #ececec;
+  color: #c7c7c7;
+}
+::placeholder {
+  color: #c7c7c7;
+  font-size: 35px;
 }
 
-.App-link {
-  color: #61dafb;
+.outputText {
+  font-size: 35px;
+  color: #c7c7c7;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.headerTodo {
+  display: flex;
+  justify-content: center;
+  font-weight: 150;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+.checkBox {
+  width: 1.5em;
+  height: 1.5em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #ddd;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkBox:checked {
+  background-color: #89cabb;
+}
+
+.completed {
+  text-decoration: line-through;
+}
+
+.container {
+  width: 100%;
+  min-height: 400px;
+  background-color: #f4f4f4;
 }
