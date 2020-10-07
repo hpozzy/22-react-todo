@@ -18,9 +18,11 @@ body {
   justify-content: space-between;
   border: 1px solid #ececec;
   padding-bottom: 2px;
+  color: #727272;
+
   padding-top: 2px;
   align-items: center;
-  font-size: 30px;
+  font-size: 25px;
   background-color: white;
   /* text-decoration: line-through; */
 }
@@ -31,9 +33,11 @@ body {
   /* font-weight: 300; */
   color: #e9dbda;
   background-color: #f4f4f4;
+  box-shadow: 5px 5px 5px 5px #ebebeb;
 }
 .inputArea {
-  width: 98.5%;
+  padding-left: 25px;
+  width: 94.8%;
   height: 50px;
   font-size: 35px;
   border: 1px solid #ececec;
@@ -41,7 +45,10 @@ body {
 }
 ::placeholder {
   color: #c7c7c7;
-  font-size: 35px;
+  font-size: 25px;
+  align-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 .outputText {
@@ -75,10 +82,12 @@ body {
 
 .completed {
   text-decoration: line-through;
+  color: #727272;
 }
 
 .container {
   width: 100%;
   min-height: 400px;
   background-color: #f4f4f4;
+  box-shadow: 5px 5px 5px 5px #ebebeb;
 }

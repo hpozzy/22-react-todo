@@ -26,7 +26,7 @@ export default () => {
     <div className="container">
       <div className="wholeBody">
         <h1 className="headerTodo">todos</h1>
-        <form onSubmit={handleSubmit}>
+        <form className="form" onSubmit={handleSubmit}>
           <input
             className="inputArea"
             type="text"

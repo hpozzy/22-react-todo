@@ -8,7 +8,6 @@ import TodoList from "./components/TodoList"
 function App() {
   return (
     <Provider store={store}>
-      <TodoApp />
       <TodoList />
     </Provider>
   )
