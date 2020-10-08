@@ -55,9 +55,11 @@ export default (state = initialState, action) => {
 
 // 5. action creators
 function makeListItem(input) {
-  return {
-    type: ADD_TODO,
-    payload: input,
+  if (input != "" && input != null) {
+    return {
+      type: ADD_TODO,
+      payload: input,
+    }
   }
 }
 function deleteListItem(id) {
